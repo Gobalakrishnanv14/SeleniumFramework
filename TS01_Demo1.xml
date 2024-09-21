@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TS01_Demo1">
+
+	<listeners>
+
+		<listener
+			class-name="com.Automationexercise.PriorityInterceptor"></listener>
+		<listener class-name="com.Automationexercise.TestListener"></listener>
+	</listeners>
+
+	<parameter name="browser" value="edge"></parameter>
+	<test thread-count="5" name="TS01_Demo1">
+		<classes>
+			<class name="com.Automationexercise.test.TS01_Demo1" />
+		</classes>
+	</test>
+</suite> 
